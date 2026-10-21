@@ -15,7 +15,7 @@ const CopyInput = () => {
             setTimeout(() => {
                 setCopied(false)
                 
-            }, 200);
+            }, 5000);
         })
     }
 

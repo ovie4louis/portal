@@ -1,13 +1,15 @@
-import React from 'react'
+import {createPortal} from "react-dom"
 
 const PopupContent = ({copied}) => {
-  return <section>
+  return createPortal(<section>
 
     {copied && ( 
         <div style={{position : 'absolute', bottom : "3rem"}}>copide clickboard</div>
     )}
         
-    </section>
+    </section>,
+    document.querySelector("#popu-content")
+    )
 }
 
 export default PopupContent
